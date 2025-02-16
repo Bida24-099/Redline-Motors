@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+h1{
+    color: red;
+}
+p{
+    background-color: black;
+    color: red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif;
+    box-sizing: border-box;
+}
+ul{
+    background-color: black;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a{
+    display: block;
+    padding: 15px 30px;
+    color: red;
+    text-decoration: none;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    min-width: 100%;
+    background-color: black;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+ul li a:hover{
+    background-color: red;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
