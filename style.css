@@ -51,3 +51,15 @@ ul li a:hover{
 ul li:hover ul.dropdown{
     display: block;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        width: 100%;
+    }
+    ul li a {
+        padding: 10px 20px;
+    }
+}
