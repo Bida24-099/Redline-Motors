@@ -1,8 +1,10 @@
 body{
     background-color: black;
-}
-h1{
     color: red;
+}
+h1,h2{
+    color: red;
+    text-align: center;
 }
 p{
     background-color: black;
@@ -13,6 +15,12 @@ p{
     margin: 0;
     font-family: monospace, sans-serif;
     box-sizing: border-box;
+}
+header{
+    background-color: black;
+    color: red;
+    padding: 10px 0;
+    text-align: center;
 }
 ul{
     background-color: black;
