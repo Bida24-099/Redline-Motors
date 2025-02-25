@@ -1,29 +1,28 @@
-body {
+body{
     background-color: black;
     color: red;
-    font-family: monospace, sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
-h1, h2 {
+h1,h2{
     color: red;
     text-align: center;
 }
-
-p {
+p{
     background-color: black;
     color: red;
 }
-
-header {
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif;
+    box-sizing: border-box;
+}
+header{
     background-color: black;
     color: red;
     padding: 10px 0;
     text-align: center;
 }
-
-ul {
+ul{
     background-color: black;
     list-style: none;
     text-align: left;
@@ -32,42 +31,41 @@ ul {
     display: flex;
     flex-wrap: wrap;
 }
-
-ul li {
+ul li{
     display: inline-block;
     position: relative;
     line-height: 21px;
     text-align: left;
 }
-
-ul li a {
+ul li a{
     display: block;
     padding: 15px 30px;
     color: red;
     text-decoration: none;
 }
-
-ul li ul.dropdown li {
+ul li ul.dropdown li{
     display: block;
 }
-
-ul li ul.dropdown {
+ul li ul.dropdown{
     min-width: 100%;
     background-color: black;
     display: none;
     position: absolute;
     z-index: 999;
 }
-
-ul li a:hover {
+ul li a:hover{
     background-color: red;
 }
-
-ul li:hover ul.dropdown {
+ul li:hover ul.dropdown{
     display: block;
 }
 
-.hero {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+}
+.hero{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -75,8 +73,7 @@ ul li:hover ul.dropdown {
     background-size: cover;
     position: absolute;
 }
-
-.form-box {
+.form-box{
     width: 380px;
     height: 480px;
     position: relative;
@@ -86,16 +83,14 @@ ul li:hover ul.dropdown {
     overflow: hidden;
     color: red;
 }
-
-.button-box {
+.button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #ff00001f;
     border-radius: 30px;
 }
-
-.toggle-btn {
+.toggle-btn{
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
@@ -104,8 +99,7 @@ ul li:hover ul.dropdown {
     position: relative;
     color: red;
 }
-
-#btn {
+#btn{
     top: 0;
     left: 0;
     position: absolute;
@@ -116,14 +110,13 @@ ul li:hover ul.dropdown {
     transition: .5s;
 }
 
-.input-group {
+.input-group{
     top: 180px;
     position: absolute;
     width: 280px;
     transition: .5s;
 }
-
-.input-field {
+.input-field{
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
@@ -135,8 +128,7 @@ ul li:hover ul.dropdown {
     background: transparent;
     color: red;
 }
-
-.submit-btn {
+.submit-btn{
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
@@ -148,22 +140,18 @@ ul li:hover ul.dropdown {
     border-radius: 30px;
     color: black;
 }
-
-.check-box {
+.check-box{
     margin: 30px 10px 30px 0;
 }
-
-span {
+span{
     color: #777;
     font-size: 12px;
     bottom: 68px;
     position: absolute;
 }
-
 #login {
     left: 50px;
 }
-
 #register {
     left: 450px;
 }
