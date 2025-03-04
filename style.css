@@ -2,7 +2,7 @@ body{
     background-color: black;
     color: red;
 }
-h1,h2{
+h1,h2,h3{
     color: red;
     text-align: center;
 }
@@ -60,11 +60,6 @@ ul li:hover ul.dropdown{
     display: block;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
 .hero{
     height: 100%;
     width: 100%;
@@ -154,4 +149,46 @@ span{
 }
 #register {
     left: 450px;
+}
+
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: red;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: black;
+    color: red;
+    outline: none;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, red, darkred);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
 }
