@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sell Your Car</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  
+  <div style="display: flex; align-items: center;">
+    <a href="index.html"><img src="RM ID 10.jpeg" alt="RM Logo" width="200" height="200"></a>
+    <h1><small><i>Drive your dream home today at RM the Only dealership with affordable prices.</i></small></h1>
+  </div>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="#"> Buy</a>
+      <ul class="dropdown">
+        <li><a href="car_sp.html">Car Specails</a></li>
+        <li><a href="car_ud.html">Find a Car</a></li>
+      </ul>
+    </li>
+    <li><a href="sell.html">Sell</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+        <li><a href="feedback.html"> FeedBack</a></li>
+      </ul>
+    </li>
+    <li><a href="Register.html">Log In/Register</a></li>
+  </ul>
+
+      <h2 style="text-align: center;">Sell Your Car</h2>
+
+    <form action="submit-form.php" method="POST">
+        <label for="make">Car Make:</label>
+        <input type="text" id="make" name="make" required>
+
+        <label for="model">Car Model:</label>
+        <input type="text" id="model" name="model" required>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="1900" max="2025" required>
+
+        <label for="price">Price (Pula):</label>
+        <input type="number" id="price" name="price" min="0" required>
+
+        <label for="condition">Condition:</label>
+        <select id="condition" name="condition">
+            <option value="new">New</option>
+            <option value="used">Used</option>
+            <option value="certified">Certified Pre-Owned</option>
+        </select>
+
+        <label for="mileage">Mileage (miles):</label>
+        <input type="number" id="mileage" name="mileage" min="0">
+
+        <label for="description">Additional Description:</label>
+        <textarea id="description" name="description" rows="4"></textarea>
+
+        <h3>Seller Information</h3>
+
+        <label for="seller_name">Full Name:</label>
+        <input type="text" id="seller_name" name="seller_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit Listing</button>
+    </form>
+  <br>
+
+    <footer>
+        <p>&copy; 2025 Lore B</p>
+    </footer>
+  
+</body>
+</html>
