@@ -191,3 +191,25 @@ form button[type="submit"] {
     cursor: pointer;
     text-align: center;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+td, th {
+    border: 1px solid red;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+}
