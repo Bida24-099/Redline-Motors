@@ -1,3 +1,4 @@
+/*body setup*/
 body {
     background-color: black;
     color: white;
@@ -22,6 +23,8 @@ header {
     padding: 10px 0;
     text-align: center;
 }
+
+/* Dropdown menu setup */
 ul {
     background-color: black;
     list-style: none;
@@ -60,6 +63,7 @@ ul li:hover ul.dropdown {
     display: block;
 }
 
+/* Login&register form box setup */
 .hero {
     height: 100%;
     width: 100%;
@@ -232,6 +236,7 @@ button[type="submit"]:hover {
     background: linear-gradient(to right, red, darkred);
 }
 
+/* Table setup */
 table {
     width: 100%;
     border-collapse: collapse;
