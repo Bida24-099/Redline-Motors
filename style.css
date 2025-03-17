@@ -241,20 +241,17 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
 }
-
 table {
-    width: 100%;
+    width: 80%;
+    max-width: 800px;
     border-collapse: collapse;
-    border-spacing: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
     color: white;
 }
 
 td, th {
-    border: 1px solid red;
-    padding: 8px;
-    text-align: left;
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
 }
 
 tr:nth-child(even) {
