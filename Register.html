@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Lore B">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="30">
+  
+<title>Log in/Register </title>
+<link rel= "icon" href="RM ID 10.jpeg" type="image/png">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  
+  <div style="display: flex; align-items: center;">
+    <a href="index.html"><img src="RM ID 10.jpeg" alt="RM Logo" width="200" height="200"></a>
+    <h2><small><i>Drive your dream home today at RM the Only dealership with affordable prices.</i></small></h2>
+  </div>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>
+      <a href="#"> Buy</a>
+      <ul class="dropdown">
+        <li><a href="car_sp.html">Car Specails</a></li>
+        <li><a href="car_ud.html">Find a Car</a></li>
+      </ul>
+    </li>
+    <li><a href="sell.html">Sell</a></li>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html"> Contact Us</a></li>
+        <li><a href="feedback.html"> FeedBack</a></li>
+      </ul>
+    </li>
+    <li><a href="Register.html">Log In/Register</a></li>
+  </ul>
+  <div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+        </div>
+
+        <form id="login" class="input-group">
+            <input type="text" class="input-field" placeholder="User Name" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form id="register" class="input-group">
+            <input type="text" class="input-field" placeholder="User Name" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+    }
+</script>
+    <br>
+    
+    <footer>
+        <p>&copy; 2025 Lore B</p>
+    </footer>
+
+</body>
+</html>
