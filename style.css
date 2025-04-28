@@ -24,6 +24,10 @@ header {
     text-align: center;
 }
 
+a {
+    color:hotpink ;
+}
+
 /* Dropdown menu setup */
 ul {
     background-color: black;
