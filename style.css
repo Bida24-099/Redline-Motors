@@ -25,7 +25,9 @@ header {
 }
 
 /*Link Behaviour*/
-
+a: link {
+    color: white;
+}
 
 /* Dropdown menu setup */
 ul {
