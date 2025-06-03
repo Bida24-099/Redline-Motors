@@ -1,0 +1,296 @@
+/*body setup*/
+body {
+    background-color: black;
+    color: white;
+}
+h1, h2, h3 {
+    color: red;
+    text-align: center;
+}
+p {
+    background-color: black;
+    color: white;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*Link Behaviour*/
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: grey;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: grey;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+
+/* Dropdown menu setup */
+ul {
+    background-color: black;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    min-width: 100%;
+    background-color: black;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+ul li a:hover {
+    background-color: red;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* Login&register form box setup */
+.hero {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: black;
+    padding: 5px;
+    overflow: hidden;
+    color: white;
+}
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff00001f;
+    border-radius: 30px;
+}
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, red, darkred);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group {
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid red;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, red, darkred);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: black;
+}
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+span {
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+#login {
+    left: 50px;
+}
+#register {
+    left: 450px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    outline: none;
+}
+
+form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, red, darkred);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 16px;
+    background: black;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, red, darkred);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to right, red, darkred);
+}
+
+/* Table setup */
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+table {
+    width: 80%;
+    max-width: 800px;
+    border-collapse: collapse;
+    color: white;
+}
+
+td, th {
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:nth-child(odd) {
+    background-color: black;
+}
